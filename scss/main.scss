@@ -37,12 +37,13 @@ img {
 #header-home {
 	background: $bg-img no-repeat center right / cover;
 	height: 100vh;
+	color: #fff;
 	// navbar
 	#main-nav {
 		display: flex;
 		justify-content: space-between;
 		padding-top: 1rem;
-
+		//general tag
 		ul {
 			display: flex;
 		}
@@ -67,12 +68,39 @@ img {
 				border-color: $main-color;
 			}
 		}
+		//class & id
 		// logo
 		#logo {
 			width: 70px;
 			height: 70px;
 			color: #fff;
 			text-transform: uppercase;
+		} //end
+	} //end
+	//main heder content
+	.header-content {
+		text-align: center;
+		padding-top: 20%;
+		h1 {
+			font-size: 4rem;
+			line-height: 1.2;
 		}
-	}
-}
+	} //end
+} //end
+
+//---------------home sections----------------
+#home {
+	&-a {
+		.specials {
+			display: grid;
+			grid-gap: 1rem;
+			margin-top: 3rem;
+			grid-template-columns: repeat(4, 1fr);
+
+			.fas {
+				color: $main-color;
+				padding-bottom: 0.4rem;
+			} //end
+		} //end
+	} //end
+} //end
