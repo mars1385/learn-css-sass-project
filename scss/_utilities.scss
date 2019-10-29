@@ -48,6 +48,23 @@ input[class^='btn']:hover {
 	text-align: center;
 }
 
+.section-title {
+	font-size: 2rem;
+	display: block;
+	text-align: center;
+	font-weight: 100;
+	text-transform: uppercase;
+	padding-bottom: 0.5rem;
+}
+
+.bottom-line {
+	background: $main-color;
+	height: 2.5px;
+	margin: 0 auto 1rem auto;
+	width: 3rem;
+	display: block;
+}
+
 // padding
 .py {
 	&-1 {

@@ -90,6 +90,7 @@ img {
 
 //---------------home sections----------------
 #home {
+	//home section a :
 	&-a {
 		.specials {
 			display: grid;
@@ -103,4 +104,107 @@ img {
 			} //end
 		} //end
 	} //end
+	//home section b :
+	&-b {
+		.stats {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			li {
+				line-height: 2;
+				&.stats-title {
+					font-size: 1.5rem;
+				}
+				&.stats-number {
+					font-size: 2rem;
+					font-weight: bold;
+				}
+			} //end
+			div {
+				padding: 3rem 0;
+				&:nth-child(odd) {
+					background: $light-color;
+				}
+				&:nth-child(even) {
+					background: $medium-color;
+				}
+			} //end
+		} //end
+	} //end
+	//home section c
+	&-c {
+		.process {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 1.5rem;
+			text-align: center;
+
+			.process-icon {
+				background: $dark-color;
+				height: 70px;
+				width: 70px;
+				line-height: 70px;
+				border-radius: 50%;
+				color: #fff;
+				padding: 2rem;
+				text-align: center;
+				position: relative;
+				transition: all 1s;
+
+				&:hover {
+					background: $main-color;
+					height: 90px;
+					width: 90px;
+					line-height: 90px;
+					.process-step {
+						background: $dark-color;
+					}
+				}
+			}
+
+			.process-step {
+				background: $main-color;
+				height: 15px;
+				width: 15px;
+				line-height: 15px;
+				border-radius: 50%;
+				font-size: 28px;
+				color: #fff;
+				padding: 1rem;
+				text-align: center;
+				position: absolute;
+				top: 0;
+				right: 0;
+				transition: all 1s;
+			}
+		} //end
+	} //end
 } //end
+
+// main footer
+#main-footer {
+	background: $dark-color;
+	height: 5rem;
+	color: #fff;
+
+	.footer-content {
+		display: flex;
+		height: 5rem;
+		justify-content: space-between;
+		align-items: center;
+
+		.social .fab {
+			border: 2px #fff solid;
+			border-radius: 50%;
+			margin-right: 1rem;
+			height: 20px;
+			width: 20px;
+			line-height: 20px;
+			text-align: center;
+			padding: 0.5rem;
+
+			&:hover {
+				background: $main-color;
+			}
+		}
+	}
+}
